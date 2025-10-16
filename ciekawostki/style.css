@@ -1,0 +1,210 @@
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('https://apetytnapodroz.pl/wp-content/uploads/2022/09/DSC02534-scaled.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+body, html {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-content {
+  max-width: 700px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e6b800;
+  color: #000;
+}
+
+:root {
+      --primary-color: #006699;
+      --background-color: #ffffff;
+      --text-color: #333333;
+      --nav-height: 60px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--nav-height);
+      background-color: var(--primary-color);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 2rem;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 100px 20px 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+
+    h2 {
+      color: var(--primary-color);
+    }
+
+    .places {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .place {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #f9f9f9;
+      transition: transform 0.2s;
+    }
+
+    .place:hover {
+      transform: scale(1.02);
+    }
+
+    .place img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .place div {
+      padding: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f0f0f0;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+      }
+
+      nav a {
+        margin-left: 1rem;
+      }
+    }
+
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.fact-card {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.fact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.fact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.fact-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.fact-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
